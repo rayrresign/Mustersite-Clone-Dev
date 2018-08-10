@@ -1,0 +1,275 @@
+
+/* --------  side menu  ------------------------------------------ */
+
+/* only on mobile */
+@media only screen and (min-width: 970px) {
+/*	#side-menu-btn {display: none;}*/
+}
+.side-elements{
+	padding-left: 30px;
+	color: #fff;
+	font-size: 90%;
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+.side-mobile-res-nav{
+}
+#side-menu {
+	z-index: 5000;
+}
+#side-menu-box {
+	height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: transparent; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+#side-menu-box.teaser { 
+    width: 0; /* 0 width - change this with JavaScript */
+	background: rgba(0, 0, 0, 0.7);
+}
+@media only screen and (max-width: 970px) {
+	.res-nav-header {position: absolute;}
+}
+body.openSideMenu #side-menu-box {
+	background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;  /*  background color alpha overlayer */
+	bottom: 0;
+	display: block;
+	height: 100%;
+	right: 0;
+	position: fixed;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	z-index: 999;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0; /* Place content 60px from the top */
+    transition: 0.25s; /* 0.5 second transition effect to slide in the sidenav */
+}
+@media only screen and (max-width: 970px) {
+	body.openSideMenu #side-menu-box {width: 100%;}   /* breite Mobile Box */
+}
+
+body.openSideMenu .side-menu-overlayer {	
+	background: rgba(0, 0, 0, 0.45) none repeat scroll 0 0;  /*  background dimmer fullscreen alpha  */
+	bottom: 0;
+	display: block;
+	height: 100%;
+	right: 0;
+	position: fixed;
+	top: 0;
+	margin: 0;
+	width: 100%;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */	
+    z-index: 999;
+}
+
+
+/*  Blog Hinweis Desktop */
+.side-blog-overlayer{
+	max-width: 600px;
+	margin: 0 auto;
+	color: #fff;
+}
+.side-blog-overlayer p a{
+	color: #fff	
+}
+.side-blog-overlayer p{
+	margin-bottom: 0.2em;	
+}
+
+
+
+/*   X CLOSE und =  */
+.side-lines-button {
+	display: block;
+	background: transparent none repeat scroll 0 0;
+	border: medium none;
+	cursor: pointer;
+	float: right;
+	margin-bottom: 8px;
+	padding: 9px 10px;
+	position: fixed;
+	right: 40px;
+	top: 0px;
+	z-index: 1000;
+	-webkit-transition: all 0.1s ease 0s;
+	transition: all 0.1s ease 0s;
+}
+
+@media only screen and (max-width: 970px) {
+.side-lines-button { right: 25px; top: 8px;}  /*  mobile icon postition */ 
+}
+
+.side-lines-button:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.side-lines {
+	background: #000 none repeat scroll 0 0;   /*  color icon */
+	display: inline-block;
+	height: 1px;
+	position: relative;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	width: 30px;
+}
+.side-lines:before, .side-lines:after {
+	background: #000 none repeat scroll 0 0;  /*  color icon */
+	content: "";
+	display: inline-block;
+	height: 1px;
+	left: 0;
+	position: absolute;
+	-webkit-transform-origin: 0.28571rem center 0;
+	-ms-transform-origin: 0.28571rem center 0;
+	transform-origin: 0.28571rem center 0;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	width: 30px;
+}
+.side-lines:before {
+	top: 8px;
+}
+.side-lines:after {
+	top: -8px;
+}
+.side-lines-button.x.closebutton .side-lines {
+	background: transparent none repeat scroll 0 0;
+}
+.side-lines-button.x.closebutton .side-lines:before, .side-lines-button.x.closebutton .side-lines:after {
+	top: 10px;
+	margin-right: 8px;
+	width: 30px;
+	-webkit-transform-origin: 50% 50% 0;
+	-ms-transform-origin: 50% 50% 0;
+	transform-origin: 50% 50% 0;
+}
+@media only screen and (max-width: 970px) {
+	.side-lines-button.x.closebutton .side-lines:before, .side-lines-button.x.closebutton .side-lines:after {
+    width: 30px;
+}
+}
+.side-lines-button.x.closebutton .side-lines:before {
+	-webkit-transform: rotate3d(0, 0, 1, 45deg);
+	transform: rotate3d(0, 0, 1, 45deg);
+}
+.side-lines-button.x.closebutton .side-lines:after {
+	-webkit-transform: rotate3d(0, 0, 1, -45deg);
+	transform: rotate3d(0, 0, 1, -45deg);
+}
+body.openSideMenu .side-lines-button .side-lines::before, body.openSideMenu .side-lines-button .side-lines::after {
+	background: #fff none repeat scroll 0 0;
+}
+.side-menu-inside {
+	padding-left: 5%;
+	padding-right: 2%;
+	padding-top: 4%;
+}
+.side-menu-inside .navbar-nav > li {
+	float: none;
+	width: 100%;
+	opacity: 0;
+}
+
+/*  Navigation Style */
+.side-menu-inside .nav > li, 
+.side-menu-inside .nav > li > a {
+    display: inline-block;
+    font-size: 140%;
+    line-height: 140%;
+    font-weight: 100;
+    color: #fff;
+    padding-right: 0;
+    letter-spacing: 0.05em;
+	max-height: 70px;
+/*    overflow: hidden;*/
+}
+@media only screen and (max-width: 1280px) {
+	.side-menu-inside .nav > li, .side-menu-inside .nav > li > a {
+    line-height: 110%;
+}
+} 
+.side-menu-inside .dropdown-menu > li > a {
+    font-weight: 300;
+    color: #fff;
+	font-size: 95%;
+	padding-left: 5%;
+}
+.side-menu-inside .nav .dropdown-menu {
+    background-color: transparent;
+	box-shadow: none;
+	margin-left: 5%;
+}
+@media only screen and (max-width: 1100px) {
+	.side-menu-inside .nav > li,
+	.side-menu-inside .nav > li > a { font-size: 120%;line-height:120%;}
+}
+
+@media only screen and (max-width: 970px) {
+	.side-menu-inside .nav > li, .side-menu-inside .nav > li > a { font-size: 120%; line-height: 70%;}
+	.side-menu-inside .nav > li > a {padding-left: 40px;}
+	.side-menu-inside .navbar-nav li a { padding: 20px 0 20px 33px;}
+	.side-menu-inside .nav > li > a.active, .side-menu-inside .nav > li > a:hover{ opacity: 0.5;}
+}
+
+
+/*   Animations */
+.show-navs {	
+    animation: 0.5s ease 0s normal forwards 1 fadein;
+}	
+@-webkit-keyframes fadein{
+    0% { 
+		opacity:0;
+		padding-left: 5%;
+	}
+    100% { 
+		opacity:1;
+		padding-left: 3%;
+	}
+}
+
+@keyframes fadein{
+    0% { 
+		opacity:0;
+		padding-left: 5%;
+	}
+    100% { 
+		opacity:1;
+		padding-left: 3%;
+	}
+}
+@media only screen and (max-width: 970px) {
+.lines-button { display: block;	outline: block;}
+}
+
+.sidemenu-animation-start{	
+	opacity: 0;
+}
+.sidemenu-animation{	
+    animation: 0.5s ease 0s normal forwards 1 sidemenuAnimation;
+}	
+@-webkit-keyframes sidemenuAnimation{
+    0% { 
+		opacity:0;
+	}
+    100% { 
+		opacity:1;
+	}
+}
+	
+@keyframes sidemenuAnimation{
+    0% { 
+		opacity:0;
+	}
+    100% { 
+		opacity:1;
+	}
+}

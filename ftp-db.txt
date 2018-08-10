@@ -1,0 +1,9 @@
+DB:
+mustersite_clone-2018
+user: clone-2018
+pw:  Ut2d1p4!
+
+FTP:
+ftp.mustersite.ch
+mustersite
+pw:  VolvoWeb78..RES

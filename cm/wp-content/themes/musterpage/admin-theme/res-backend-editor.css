@@ -1,0 +1,50 @@
+
+/* Backend Editor Styling */
+
+/*   for functions
+
+// backend Editor Style
+add_editor_style( '/admin-theme/res-backend-editor.css' );
+
+*/
+
+
+body.mce-content-body {
+    font-family: arial, sans-serif;
+    font-size: 95%;
+}
+
+body.mce-content-body h1,
+body.mce-content-body h2,
+body.mce-content-body h3,
+body.mce-content-body h4,
+body.mce-content-body h5,
+body.mce-content-body h6 {
+	line-height: 140%;
+	font-weight: 300;
+	margin: 10px 0;
+}
+body.mce-content-body h1 { 
+	font-size: 40px;
+}
+
+body.mce-content-body h2 {
+	font-size: 30px;
+	font-weight: 300;
+}
+body.mce-content-body h3 {
+	font-size: 24px;
+}
+body.mce-content-body h4 {
+	font-size: 18px;
+}
+body.mce-content-body p{
+}
+body.mce-content-body .csColumnGap img{
+	display: none;
+}
+
+
+
+
+

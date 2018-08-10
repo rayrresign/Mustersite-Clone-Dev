@@ -1,0 +1,425 @@
+
+
+/*************************************************************************/
+/*   RES Animationen AOS ab 2018  */
+
+
+[data-aos=res-downIncoming] {
+    transform: translate3d(0, 50px, 0)
+}
+
+[data-aos=res-downIncomingMore] {
+    transform: translate3d(0, 100px, 0)
+}
+
+
+/*  res-fadeIn  -  einfaden  */
+[data-aos="res-fadeIn"] { opacity: 0; transition-property: transform, opacity;}
+[data-aos="res-fadeIn"].aos-animate {opacity: 1;}
+
+
+
+
+/*  res-topIncoming  -  einfaden von oben 10px  */
+[data-aos="res-topIncoming"] { opacity: 0; transition-property: transform, opacity;}
+[data-aos="res-topIncoming"].aos-animate {opacity: 1;}
+
+[data-aos="res-topIncoming"] {
+	transform: translateY(-10px);
+	}
+[data-aos="res-topIncoming"].aos-animate {
+	transform: translateY(0); 
+	}
+
+/*  res-topIncomingMore -  einfaden von oben 40px */
+[data-aos="res-topIncomingMore"] { opacity: 0; transition-property: transform, opacity;}
+[data-aos="res-topIncomingMore"].aos-animate {opacity: 1;}
+
+[data-aos="res-topIncomingMore"] { 
+	transform: translateY(-40px);
+	}
+[data-aos="res-topIncomingMore"].aos-animate { 
+	transform: translateY(0);
+	}
+
+
+
+
+/*  res-downIncoming  -  einfaden von unten 10px  */
+[data-aos="res-downIncoming"] { opacity: 0; transition-property: transform, opacity;}
+[data-aos="res-downIncoming"].aos-animate {opacity: 1;}
+
+[data-aos="res-downIncoming"] {
+	transform: translateY(10px);
+	}
+[data-aos="res-downIncoming"].aos-animate {
+	transform: translateY(0); 
+	}
+
+/*  res-downIncomingMore -  einfaden von unten 40px */
+[data-aos="res-downIncomingMore"] { opacity: 0; transition-property: transform, opacity;}
+[data-aos="res-downIncomingMore"].aos-animate {opacity: 1;}
+
+[data-aos="res-downIncomingMore"] { 
+	transform: translateY(40px);
+	}
+[data-aos="res-downIncomingMore"].aos-animate { 
+	transform: translateY(0);
+	}
+
+
+
+/*  res-leftIncoming  -  einfaden von links 20px  */
+[data-aos="res-leftIncoming"] { opacity: 0; transition-property: transform, opacity;}
+[data-aos="res-leftIncoming"].aos-animate {opacity: 1;}
+
+[data-aos="res-leftIncoming"] {
+	transform: translateX(-20px);
+	}
+[data-aos="res-leftIncoming"].aos-animate {
+	transform: translateX(0); 
+	}
+
+/*  res-leftIncomingMore -  einfaden von links 70px */
+[data-aos="res-leftIncomingMore"] { opacity: 0; transition-property: transform, opacity;}
+[data-aos="res-leftIncomingMore"].aos-animate {opacity: 1;}
+
+[data-aos="res-leftIncomingMore"] { 
+	transform: translateX(-70px);
+	}
+[data-aos="res-leftIncomingMore"].aos-animate { 
+	transform: translateX(0);
+	}
+
+
+
+/*  res-rightIncoming  -  einfaden von rechts 20px  */
+[data-aos="res-rightIncoming"] { opacity: 0; transition-property: transform, opacity;}
+[data-aos="res-rightIncoming"].aos-animate {opacity: 1;}
+
+[data-aos="res-rightIncoming"] {
+	transform: translateX(20px);
+	}
+[data-aos="res-rightIncoming"].aos-animate {
+	transform: translateX(0); 
+	}
+
+/*  res-rightIncomingMore -  einfaden von rechts 70px */
+[data-aos="res-rightIncomingMore"] { opacity: 0; transition-property: transform, opacity;}
+[data-aos="res-rightIncomingMore"].aos-animate {opacity: 1;}
+
+[data-aos="res-rightIncomingMore"] { 
+	transform: translateX(70px);
+	}
+[data-aos="res-rightIncomingMore"].aos-animate { 
+	transform: translateX(0);
+	}
+
+
+/*  Klasse auf DIV .moving-arrow aos-init aos-animate */
+
+.moving-arrow{
+    display: block;
+    -webkit-animation: arrow-pulse 2s infinite;
+    animation: pulse 2s infinite;
+}
+	@-webkit-keyframes arrow-pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@keyframes arrow-pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+	
+
+
+/*************************************************************************/
+/*   RES Standart Animationen Libary  - Only on Desktop  */
+
+ /*  Effekte on Desktop-Screens */
+@media all and (min-width: 1200px) {
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+@keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+.topIncoming {
+	-webkit-animation-name: topIncoming;
+	animation-name: topIncoming;
+}
+
+@-webkit-keyframes topIncoming {
+	0% {opacity: 0;-webkit-transform: translateY(-10px);}
+	100% {opacity: 1; -webkit-transform: translateY(0);}
+}
+
+@keyframes topIncoming {
+	0% {opacity: 0; transform: translateY(-10px);}
+	100% {opacity: 1;transform: translateY(0);}
+}
+
+.topIncomingMore {
+	-webkit-animation-name: topIncomingMore;
+	animation-name: topIncomingMore;
+}
+
+@-webkit-keyframes topIncomingMore {
+	0% {opacity: 0;-webkit-transform: translateY(-30px);}
+	100% {opacity: 1; -webkit-transform: translateY(0);}
+}
+
+@keyframes topIncomingMore {
+	0% {opacity: 0; transform: translateY(-30px);}
+	100% {opacity: 1;transform: translateY(0);}
+}
+
+
+
+.downIncoming {
+	-webkit-animation-name: downIncoming;
+	animation-name: downIncoming;
+}
+
+@-webkit-keyframes downIncoming {
+	0% {opacity: 0;-webkit-transform: translateY(10px);}
+	100% {opacity: 1; -webkit-transform: translateY(0);}
+}
+
+@keyframes downIncoming {
+	0% {opacity: 0; transform: translateY(10px);}
+	100% {opacity: 1;transform: translateY(0);}
+}
+
+
+.downIncomingMore {
+	-webkit-animation-name: downIncomingMore;
+	animation-name: downIncomingMore;
+}
+
+@-webkit-keyframes downIncomingMore {
+	0% {opacity: 0;-webkit-transform: translateY(30px);}
+	100% {opacity: 1; -webkit-transform: translateY(0);}
+}
+
+@keyframes downIncomingMore {
+	0% {opacity: 0; transform: translateY(30px);}
+	100% {opacity: 1;transform: translateY(0);}
+}
+
+
+/*************************************************************************/
+/*  for WOW Animations  wow left-Side-Incoming" data-wow-duration="1.5s" -->  */
+
+.LeftIncoming {
+	-webkit-animation-name: sideLeftIncoming ;
+	animation-name: sideLeftIncoming ;
+}
+
+@-webkit-keyframes sideLeftIncoming  {
+	0% {opacity: 0;-webkit-transform: translateX(-30px);}
+	100% {opacity: 1; -webkit-transform: translateYX(0);}
+}
+
+@keyframes sideLeftIncoming  {
+	0% {opacity: 0; transform: translateX(-30px);}
+	100% {opacity: 1;transform: translateX(0);}
+}
+
+.RightIncoming {
+	-webkit-animation-name: sideRightIncoming ;
+	animation-name: sideRightIncoming ;
+}
+
+@-webkit-keyframes sideRightIncoming  {
+	0% {opacity: 0;-webkit-transform: translateX(30px);}
+	100% {opacity: 1; -webkit-transform: translateYX(0);}
+}
+
+@keyframes sideRightIncoming  {
+	0% {opacity: 0; transform: translateX(30px);}
+	100% {opacity: 1;transform: translateX(0);}
+}
+
+
+.zoomHover:hover{
+	-webkit-animation-name: zoomHover;
+	-moz-animation-name: zoomHover;
+	animation-name: zoomHover;
+}
+
+@-webkit-keyframes zoomHover {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+  }
+}
+
+
+/* flash animated infinite */
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}
+
+@-webkit-keyframes flash {
+  0%, 50%, 100% {opacity: 1;}
+  25%, 75% {opacity: 0.9;}
+}
+
+@keyframes flash {
+  0%, 50%, 100% {opacity: 1;}
+  25%, 75% {opacity: 0.9;}
+}
+
+
+/*   Pulse animation   */
+
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(.8); }
+    100% { -webkit-transform: scale(1); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(.8); }
+    100% { transform: scale(1); }
+}
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+
+/*   Pulse Soft  animation   */
+
+@-webkit-keyframes pulseSoft {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(.98); }
+    100% { -webkit-transform: scale(1); }
+}
+@keyframes pulseSoft {
+    0% { transform: scale(1); }
+    50% { transform: scale(.98); }
+    100% { transform: scale(1); }
+}
+.pulseSoft {
+    -webkit-animation-name: pulseSoft;
+    animation-name: pulseSoft;
+}
+
+
+/*************************************************************************/
+/*   Timers */
+
+.duration0 {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 0.5s;
+	-moz-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+}
+.duration1 {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	animation-duration: 1s;
+}
+.duration2 {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	animation-duration: 2s;
+}
+.duration3 {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 3s;
+	-moz-animation-duration: 3s;
+	animation-duration: 3s;
+}
+.duration4 {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 4s;
+	-moz-animation-duration: 4s;
+	animation-duration: 4s;
+}
+.duration5 {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 4.5s;
+	-moz-animation-duration: 4.5s;
+	animation-duration: 4.5s;
+}
+.duration10 {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 9s;
+	-moz-animation-duration: 9s;
+	animation-duration: 9s;
+}
+
+.animated {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 1.2s;
+	-moz-animation-duration: 1.2s;
+	-ms-animation-duration: 1.2s;
+	-o-animation-duration: 1.2s;
+	animation-duration: 1.2s;
+}
+.animated.hinge {
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+}
+

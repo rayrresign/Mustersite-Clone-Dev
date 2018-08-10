@@ -1,0 +1,184 @@
+#courseContent {
+	padding-bottom: 50px;
+}
+.courseTable{
+    position: absolute;
+    left: 5%;
+  	font-size: 90%;
+ 	line-height: 120%;
+}
+
+.courseDesktop {
+	background-color: #000;
+}
+.courseDesktop a{
+	color: #fff;
+	width: 70%;
+}
+@media only screen and (max-width: 1390px) {
+	.courseDesktop a{ font-size: 89%; top: 4%; }
+}
+@media only screen and (max-width: 1100px) {
+	.courseDesktop a{ font-size: 95%; top: 14%; }
+}
+@media only screen and (max-width: 970px) {
+	.courseDesktop a{ font-size: 65%; 	top: 19%; }
+}
+.course{
+    position: relative;	
+}
+.wplan-col {
+    float: left;
+	width: 12.5%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.table-title{
+	line-height: 120%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+	font-weight: bold;
+}
+.table-title:first-child{
+	padding-top: 38px;
+}
+@media only screen and (max-width: 1100px) {
+	.table-title:first-child{padding-top: 33px;	}
+}
+.table-zellen{
+	min-height: 50px;
+	border-left: 1px solid #cccccc;
+	border-top: 1px solid #cccccc
+}
+.table-zellen:nth-child(8n+0){
+	border-right: 1px solid #cccccc;
+} 
+.table-row{
+	border-bottom: 1px solid #cccccc;
+}
+
+/** Kalenderwoche anzeige */
+.calendarWeek{
+    max-width: 27%;
+    position: relative;
+    margin: 0 auto;
+}
+.calendarWeek h4{
+	display: inline-block;
+}
+#res_wplan_mobile .calendarWeek{	
+      padding-bottom: 5%;
+}
+@media only screen and (max-width: 1100px) {
+	.calendarWeek {max-width: 35%;}
+	.calendarWeek h4{font-size: 215%;}
+}
+@media only screen and (max-width: 970px) {
+	.calendarWeek {max-width: 43%;}
+	.calendarWeek h4{font-size: 160%;}
+}
+@media only screen and (max-width: 480px) {
+	.calendarWeek {max-width: 70%;} 
+	.calendarWeek h4{font-size: 130%;}
+}
+
+/** Wochenwechsler */
+.fa-chevron-left{
+    line-height: 3em;
+	position: absolute;
+	left: -50px;
+	cursor: pointer; 
+}
+.fa-chevron-right{
+    line-height: 3em;
+	position: absolute;
+	right: -50px;
+	cursor: pointer;
+}
+@media only screen and (max-width: 970px) {
+	.fa-chevron-right, 
+	.fa-chevron-left{
+    line-height: 4em;
+	}
+}
+@media only screen and (max-width: 970px) {
+	.fa-chevron-right, 
+	.fa-chevron-left{
+		line-height: 2.7em;
+		font-size: 140%;
+	}		
+}
+@media only screen and (max-width: 480px) {
+	.fa-chevron-right, 
+	.fa-chevron-left{
+    line-height: 2.7em;
+     font-size: 140%;
+	}
+		
+}
+
+/** external link zeichen */
+#res_wplan .fa-external-link{
+	position: absolute;
+	color: #fff;
+    top: 20%;
+    right: -25%;
+ 	font-size: 70%;
+}
+@media only screen and (max-width: 1100px) {
+.fa-external-link{top: -10%;}
+}
+
+/** Modal */
+#wochenplan .modal-dialog{
+	max-width: 700px;
+}
+.modal-backdrop.in{
+	opacity: 0.6;
+}
+.modal-backdrop {
+    background-color: #000;
+}
+#courseInfos h4 {
+	font-size: 200%;
+}
+
+/** Mobile */
+.hasCourse h4{
+	font-size: 130%;
+}
+.mobileContent{
+	background-color: #000;
+	color: #fff;
+ 	padding: 10px 15px;
+ 	position: relative;
+}
+#courseImg .img-responsive{
+	width: 100%;
+}
+@media only screen and (max-width: 970px) {
+	.mobileContent .fa-external-link{
+		position: absolute;
+		color: #fff;	
+		top: 40%;
+		right: 10%;
+     	font-size: 160%;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.mobileContent .fa-external-link{
+		position: absolute;
+		color: #fff;	
+		top: 20%;
+		right: 10%;
+     	font-size: 160%;
+	}
+}
+@media only screen and (max-width: 970px) {
+	.imgmodal {
+		margin: 0 auto;
+	}
+	.infomodal{
+		font-weight: bold;
+	}
+}

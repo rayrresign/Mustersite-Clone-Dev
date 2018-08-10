@@ -1,0 +1,176 @@
+
+/*************************************************************************/
+/* Testimonials Kunden Slider   */
+
+
+/* min-height on desktop agains ruckel-scroll  */
+@media only screen and (min-width: 1800px) {
+	#testimonialsSliderBox{min-height: 530px;}
+}
+/* min-height on Mobile agains ruckel-scroll  */
+@media only screen and (max-width: 480px) {
+	#testimonialsSliderBox{min-height: 720px;}
+}
+
+
+#testimonialsSliderPlacer {
+    margin:0 auto;
+    position:relative;
+    width:90%;
+}
+.testimonialsBox{
+	margin-bottom: 10px;
+	transition: all .2s ease-in-out;
+}
+#testimonialsSliderBox .testimonialsBox:hover{
+	opacity: 1.0;
+}
+#testimonialsSliderBox .testimonialsBox img{
+	width: 10%;
+	height: auto;
+	border-radius: 50%;
+}
+.testimonialsSlider .next, .testimonialsSlider .previous {
+    cursor:pointer
+}
+
+/*************************************************************************/
+/* Custom Carousel fuer .testimonialsSlider Slider  */
+
+.testimonialsSlider .overlayer {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, .4);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s ease-out 0s;
+  width: 100%;
+  opacity: .4;
+}
+.testimonialsSlider .item .post-carousel-item {
+	position: relative;
+}
+.testimonialsSlider .item a:hover {
+	opacity: 1;
+}
+.testimonialsSlider .item a:hover .overlayer {
+	opacity: 1;
+}
+.testimonialsSlider .carousel {
+	padding: 30px 30px;	
+}
+.testimonialsSlider .container-fluid > .carousel {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+
+/*  arrows */
+.testimonialsSlider .controls .left {
+  height: 100%;
+  left: -20px;
+  position: absolute;
+  top: 0;
+  width: 60px;
+}
+.testimonialsSlider .container-fluid > .carousel .controls .left {
+	left: 60px;
+}
+#testimonialsSliderPlacer .arrow-left {
+  left: 0;
+  border-right: 1px solid #000;  /*  arrow color */
+  border-top: 1px solid #000;  
+  display: inline-block;
+  height: 20px;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
+  transform: rotate(-135deg);
+  width: 20px;
+}
+
+.testimonialsSlider .controls .right {
+  height: 100%;
+  right: -20px;
+  position: absolute;
+  top: 0;
+  width: 60px;
+}
+.testimonialsSlider .container-fluid > .carousel .controls .right {
+	right: 60px;
+}
+#testimonialsSliderPlacer .arrow-right {
+  right: 0;
+  border-right: 1px solid #000;  /*  arrow color */
+  border-top: 1px solid #000;
+  display: inline-block;
+  height: 20px;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg);
+  width: 20px;
+}
+
+
+/* Carousel Fade */
+.testimonialsSlider .carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+.testimonialsSlider .carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.testimonialsSlider .carousel-fade .carousel-inner .active.left,
+.testimonialsSlider .carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.testimonialsSlider .carousel-fade .carousel-inner .next.left,
+.testimonialsSlider .carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.testimonialsSlider .carousel-fade .carousel-control {
+  z-index: 2;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .testimonialsSlider .carousel-fade .carousel-inner > .item.next,
+    .testimonialsSlider .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .testimonialsSlider .carousel-fade .carousel-inner > .item.prev,
+    .testimonialsSlider .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .testimonialsSlider .carousel-fade .carousel-inner > .item.next.left,
+    .testimonialsSlider .carousel-fade .carousel-inner > .item.prev.right,
+    .testimonialsSlider .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+@media only screen and (max-width: 1199px) {
+.testimonialsSlider .controls .left {
+	left: 10px;	
+}
+.testimonialsSlider .controls .right {
+	right: 10px;	
+}
+}
+@media only screen and (max-width: 767px) {
+
+.testimonialsSlider .carousel {
+	padding: 30px 0 50px 0;	
+}		
+.testimonialsSlider .controls .left {
+	margin-top: -12px;
+}
+.testimonialsSlider .controls .right {
+	margin-top: -12px;
+}	
+}

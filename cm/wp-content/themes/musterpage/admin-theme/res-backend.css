@@ -1,0 +1,221 @@
+
+
+
+/* Admin Bar & Navigation */
+
+#wpadminbar .quicklinks .menupop ul li a:hover, #wpadminbar .quicklinks .menupop ul li a:focus, #wpadminbar .quicklinks .menupop ul li a:hover strong, #wpadminbar .quicklinks .menupop ul li a:focus strong, #wpadminbar .quicklinks .menupop.hover ul li a:hover, #wpadminbar .quicklinks .menupop.hover ul li a:focus, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus, #wpadminbar li:hover .ab-icon:before, #wpadminbar li:hover .ab-item:before, #wpadminbar li a:focus .ab-icon:before, #wpadminbar li .ab-item:focus:before, #wpadminbar li.hover .ab-icon:before, #wpadminbar li.hover .ab-item:before, #wpadminbar li:hover .ab-item:after, #wpadminbar li.hover .ab-item:after, #wpadminbar li:hover #adminbarsearch:before {
+    color: #2b52b9;
+}
+
+
+#adminmenu .wp-submenu a:hover, 
+#adminmenu .wp-has-current-submenu .wp-submenu a:hover, .folded 
+#adminmenu .wp-has-current-submenu .wp-submenu a:hover, 
+#adminmenu a.wp-has-current-submenu:focus + .wp-submenu a:hover, 
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu a:hover {
+    color: #2b52b9!important;
+}
+a {
+    color: #2b52b9;
+}
+a:hover{
+	color: #5E80D9;
+}
+
+
+/* Update Button */
+#adminmenu .awaiting-mod, #adminmenu .update-plugins, #sidemenu a .update-plugins, #rightnow .reallynow {
+    background-color: #333!important;
+    color: #FFFFFF;
+}
+
+
+/*.headerResign{
+	height: 80px;
+	width: 100%;
+	background-image: url(img/cms_head_hg.png);
+	background-repeat: no-repeat;
+	background-color: #E5E5E5;
+}*/
+
+
+@media only screen and (max-width: 796px) {
+	
+.headerResign{
+	display:none;
+}
+#wpadminbar{
+	background-image: url(img/cms_mobile_hg.png);
+	background-repeat: no-repeat;	
+}
+
+}
+@media only screen and (max-width: 440px) {
+	
+.headerResign{
+	display:none;
+}
+#wpadminbar{
+	background-image: url(img/cms_iphone_hg.png);
+	background-repeat: no-repeat;	
+}
+
+}
+
+
+/* Neuer Head 2014 - active menu */
+body.admin-bar #wpcontent, body.admin-bar #adminmenu {
+    padding-top: 10px !important;
+}
+#adminmenu .wp-menu-arrow div {
+    height: 0px;!important;
+}
+#adminmenu .wp-submenu a, #adminmenu li li a, .folded #adminmenu .wp-not-current-submenu li a {
+	padding-left: 12px;
+	font-size: 11px;!important;
+	line-height: 110%;
+}
+
+/* HauptNavigation  Schriftgrösse */
+#adminmenu a.menu-top, 
+#adminmenu .wp-submenu-head {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+/* HauptNavigation  HOVER */
+a, #adminmenu a:hover, 
+	#poststuff #edButtonPreview, 
+	#poststuff #edButtonHTML, 
+	#the-comment-list p.comment-author strong a:hover, 
+	#media-upload a.del-link, 
+	#media-items a.delete, 
+	.plugins a.delete, 
+	.ui-tabs-nav a:hover 
+	{
+/*	color: #556ed5;*/
+	text-decoration: none;
+}
+
+
+/* HauptNavigation  Active Border  */
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, 
+#adminmenu li.current a.menu-top, 
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head 
+	{
+	border-bottom-color: #2b52b9 ;
+	border-top-color: #496bc4 ;
+	color: #FFFFFF;
+	text-shadow: 0 -1px 0 #fff ;
+}
+
+
+
+
+/* navigation Active  */
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, #adminmenu li.current a.menu-top, .folded #adminmenu li.wp-has-current-submenu, .folded #adminmenu li.current.menu-top, #adminmenu .wp-menu-arrow, #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head {
+	background-image: -moz-linear-gradient(center bottom , #5376d3 , #2b52b9 );
+	background: -webkit-linear-gradient(#5376d3, #2b52b9);
+	background: linear-gradient(to bottom, #5376d3 0%,#2b52b9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5376d3', endColorstr='#2b52b9	',GradientType=0 ); /* IE6-9 */
+	font-weight: 300 !important;
+}
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, #adminmenu li.current a.menu-top, #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head {
+    color: #FFFFFF;
+    text-shadow: 0 0px 0 #FFFFFF!important;
+}
+
+
+
+
+/* User Setting - Color Theme Wählen ausblenden  */
+#DashboardResign{
+	width: 99%;
+	margin: 7px;
+	padding: 10px;
+}
+@media only screen and (max-width: 1060px) {
+#DashboardResign{
+	width: 99%;
+	margin: 0px;
+	padding: 0px;
+}
+}
+
+/* Beitrag erstellen */
+.add-new-h2{
+	font-size: 16px !important;
+	font-weight:400 !important;
+	color: #FFF !important;
+	background-color: #2b52b9 !important;
+	padding-left: 30px; !important;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* NextGen Gallery Fenster ausblenden */
+
+#donator_message, #ngg_meta_box, #ngg_locale, #ngg_lastdonators, #ngg_plugin_check, #ngg_server, #dashboard_plugins, #dashboard_primary{
+	visibility: hidden;
+}
+
+/* Update Info ausblenden */
+
+.update-nag{
+	visibility: hidden;
+	height:0px;
+	width:10px;
+	overflow: hidden;
+	display: none;
+}
+.update-nag a{
+	visibility: hidden;
+	height:0px;
+	width:10px;
+	overflow: hidden;
+}
+
+
+/* Update Button fein Transparent */
+
+.update-plugins{
+	filter:alpha(opacity=10);
+	opacity: 0.1;
+	}
+	
+	
+/* Speicher Button */	
+input.button-primary, button.button-primary, a.button-primary {
+    border-color: #2b52b9;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Speicher Button */	
+.wp-core-ui .button-primary {
+    background: none repeat scroll 0 0 #2b52b9;
+    border-color: #2b52b9;
+    box-shadow: 0 1px 0 #2b52b9 inset, 0 1px 0 rgba(0, 0, 0, 0.15);
+    color: #FFFFFF;
+}
+
+/* hidden Meldungen von DuplicatPost-Plugin */	
+#duplicate-post-notice {
+	display: none;
+}
+/* Meldung von Editor-css */	
+.mce-widget{
+	display: none;
+}
+
+
+/* passwortfeld */	
+/*
+.hide-if-js{
+	display:  block !important;
+}
+*/
+

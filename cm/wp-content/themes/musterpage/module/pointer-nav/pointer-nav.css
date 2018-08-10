@@ -1,0 +1,80 @@
+
+
+/*************************************************************************/
+/* PointerNav for Onepages   */
+
+
+#pointerNav {
+	display: block;
+}
+
+@media only screen and (max-width: 970px) {
+#pointerNav {
+	display: none;
+}
+}
+
+
+#pointerNav .navbar-nav li {
+	display: block;
+}
+
+#pointerNav .navbar-nav > li > a {
+	padding: 10px 0;
+}
+
+.tooltip {
+	left: -60px !important;
+	margin-top: 4px;
+}
+body > .navbar-collapse .nav {
+	float: none;
+	margin: 0;
+	padding-right: 10px;
+	position: fixed;
+	right: 1%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 20;
+}
+body > .navbar-collapse .nav > li {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+body > .navbar-collapse .nav > li.fa:before {
+	display: none;
+}
+body > .navbar-collapse .nav > li span {
+	display: none;
+}
+body > .navbar-collapse .nav li.active a:before {
+	background: #000 none repeat scroll 0 0;
+	border: 1px solid #eee;
+	background-color: #eee;
+	height: 6px;
+	margin: auto;
+	width: 6px;
+}
+body > .navbar-collapse .nav li a:before {
+	background: transparent none repeat scroll 0 0;
+	border: 1px solid #ccc;
+	background-color: #ccc;
+	border-radius: 6px;
+	content: "";
+	height: 6px;
+	position: absolute;
+	width: 6px;
+}
+body > .navbar-collapse .nav li a:hover {
+	background: transparent none repeat scroll 0 0;
+}
+body > .navbar-collapse .nav li a:focus {
+	background: transparent none repeat scroll 0 0;
+	opacity: 1;
+	filter: alpha(opacity=100);
+	outline: none;
+}
+

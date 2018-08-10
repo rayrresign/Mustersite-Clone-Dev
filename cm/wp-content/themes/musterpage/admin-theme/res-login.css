@@ -1,0 +1,86 @@
+
+/* Login Screen Theme  CONTENT DRIVE */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+
+body.login {
+    background: none repeat scroll 0 0 #fff;
+}
+
+body {
+	background-attachment: scroll;
+	background-image: url("img/login_hg.png") !important;
+	background-repeat: no-repeat!important;
+	background-position: center top!important;
+}
+
+
+
+/*  Logo Overwrite  */
+.login h1 a {
+	background-image: url("img/login_logo.png") !important; 
+	background-position: center top;
+	background-size: 320px 138px;
+	height: 138px;
+	width: 320px;
+	margin: 0 auto 0px !important; 
+}
+
+.login form {
+    margin-top: 0px !important; 
+}
+
+
+
+/*  Button  */
+.wp-core-ui .button-primary {
+    background: none repeat scroll 0 0 #6675E1!important; 
+    border-color: #556ed5!important; 
+    box-shadow: 0 1px 0 rgba(120, 200, 230, 0.0) inset, 0 1px 0 rgba(0, 0, 0, 0.0)!important; 
+}
+.wp-core-ui .button, .wp-core-ui .button-primary, .wp-core-ui .button-secondary {
+    border-radius: 2px;
+}
+
+
+
+
+
+
+/* FF fix */
+
+a:active {
+  outline: none;
+}
+a {
+  outline: none;
+}
+:focus {
+  -moz-outline-style: none;
+}
+:-moz-any-link:focus {
+  outline: none;
+}
+
+
+
+
+/* small Font */
+
+#nav a, #backtoblog a {
+	font-size: 9px;
+	text-decoration: none;
+}
+.login #nav a, .login #backtoblog a {
+	color: #CCC !important;
+}
+.login #nav a:hover, .login #backtoblog a:hover {
+	color: #333 !important;
+}	a {
+	color: #333;
+	text-decoration: none;
+}
